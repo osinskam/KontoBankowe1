@@ -54,25 +54,13 @@ class BankAccount {
 }
 
 class SavingsAccount extends BankAccount {
-    /**
-     * Zastosowana stopa procentowa
-     */
     double interestRate;
 
-    /**
-     * Tworzy konto oszczędnościowe z określonym saldem początkowym i oprocentowaniem.
-     *
-     * @param balance      Saldo początkowe
-     * @param interestRate  Stosowana stopa procentowa
-     */
     public SavingsAccount(double balance, double interestRate) {
         super(balance);
         this.interestRate = interestRate;
     }
 
-    /**
-     * Obliczanie rocznych odsetek dla rachunku
-     */
     public double calculateInterest() {
         return balance * interestRate;
     }
