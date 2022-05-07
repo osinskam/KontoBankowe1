@@ -70,3 +70,5 @@ class SavingsAccount extends BankAccount {
         return "SavingsAccount [interestRate=" + interestRate + ", balance=" + balance + "]";
     }
 }
+
+//koniec
